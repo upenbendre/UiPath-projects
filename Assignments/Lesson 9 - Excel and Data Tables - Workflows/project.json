@@ -1,0 +1,14 @@
+{
+  "name": "Lesson 9 - Excel and Data Tables - Workflows",
+  "description": "Project",
+  "main": "Main.xaml",
+  "dependencies": {},
+  "excludedData": [
+    "Private:*",
+    "*password*"
+  ],
+  "toolVersion": "17.1.6522.14204",
+  "projectVersion": "1.0.6573.32633",
+  "packOptions": {},
+  "runtimeOptions": {}
+}

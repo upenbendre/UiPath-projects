@@ -1,0 +1,4 @@
+{
+	"usersFilePath" : "users.xlsx",
+	"numberOfUsers" : "2"
+}

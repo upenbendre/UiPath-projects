@@ -1,0 +1,281 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="ParentWF" mva:VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ParentWF_1"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:ui="http://schemas.uipath.com/workflow/activities"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Framework.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Framework.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="Parent Workflow" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="x:String" Name="gEmail" />
+      <Variable x:TypeArguments="x:String" Name="gAddr" />
+      <Variable x:TypeArguments="x:String" Name="gName" />
+    </Flowchart.Variables>
+    <Flowchart.StartNode>
+      <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_2">
+        <Sequence DisplayName="Get user data" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:Int32" Default="2000" Name="timeout" />
+          </Sequence.Variables>
+          <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="name localisation" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="American">
+            <ui:SelectItem.Items>
+              <scg:List x:TypeArguments="x:String" Capacity="64">
+                <x:String>American</x:String>
+                <x:String>Arabic</x:String>
+                <x:String>Australian</x:String>
+                <x:String>Brazil</x:String>
+                <x:String>Chechen (Latin)</x:String>
+                <x:String>Chinese</x:String>
+                <x:String>Chinese (Traditional)</x:String>
+                <x:String>Croatian</x:String>
+                <x:String>Czech</x:String>
+                <x:String>Danish</x:String>
+                <x:String>Dutch</x:String>
+                <x:String>England/Wales</x:String>
+                <x:String>Eritrean</x:String>
+                <x:String>Finnish</x:String>
+                <x:String>French</x:String>
+                <x:String>German</x:String>
+                <x:String>Greenland</x:String>
+                <x:String>Hispanic</x:String>
+                <x:String>Hobbit</x:String>
+                <x:String>Hungarian</x:String>
+                <x:String>Icelandic</x:String>
+                <x:String>Igbo</x:String>
+                <x:String>Italian</x:String>
+                <x:String>Japanese</x:String>
+                <x:String>Japanese (Anglicized)</x:String>
+                <x:String>Klingon</x:String>
+                <x:String>Ninja</x:String>
+                <x:String>Norwegian</x:String>
+                <x:String>Persian</x:String>
+                <x:String>Polish</x:String>
+                <x:String>Russian</x:String>
+                <x:String>Russian (Cyrillic)</x:String>
+                <x:String>Scottish</x:String>
+                <x:String>Slovenian</x:String>
+                <x:String>Swedish</x:String>
+                <x:String>Thai</x:String>
+                <x:String>Vietnamese</x:String>
+              </scg:List>
+            </ui:SelectItem.Items>
+            <ui:SelectItem.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="6d7b83b13ca6b7825cf3585d7da82356" Selector="&lt;html title='Generate a Random Name - Fake Name Generator' /&gt;&lt;webctrl id='n' tag='SELECT' /&gt;" WaitForReady="COMPLETE" />
+            </ui:SelectItem.Target>
+          </ui:SelectItem>
+          <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="gen country" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="Australia">
+            <ui:SelectItem.Items>
+              <scg:List x:TypeArguments="x:String" Capacity="32">
+                <x:String>Australia</x:String>
+                <x:String>Austria</x:String>
+                <x:String>Belgium</x:String>
+                <x:String>Brazil</x:String>
+                <x:String>Canada</x:String>
+                <x:String>Cyprus (Anglicized)</x:String>
+                <x:String>Cyprus (Greek)</x:String>
+                <x:String>Czech Republic</x:String>
+                <x:String>Denmark</x:String>
+                <x:String>Estonia</x:String>
+                <x:String>Finland</x:String>
+                <x:String>France</x:String>
+                <x:String>Germany</x:String>
+                <x:String>Greenland</x:String>
+                <x:String>Hungary</x:String>
+                <x:String>Iceland</x:String>
+                <x:String>Italy</x:String>
+                <x:String>Netherlands</x:String>
+                <x:String>New Zealand</x:String>
+                <x:String>Norway</x:String>
+                <x:String>Poland</x:String>
+                <x:String>Portugal</x:String>
+                <x:String>Slovenia</x:String>
+                <x:String>South Africa</x:String>
+                <x:String>Spain</x:String>
+                <x:String>Sweden</x:String>
+                <x:String>Switzerland</x:String>
+                <x:String>Tunisia</x:String>
+                <x:String>United Kingdom</x:String>
+                <x:String>United States</x:String>
+                <x:String>Uruguay</x:String>
+              </scg:List>
+            </ui:SelectItem.Items>
+            <ui:SelectItem.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="df27467cb1de854ef428abcf2ad43fb0" Selector="&lt;html title='Generate a Random Name - Fake Name Generator' /&gt;&lt;webctrl id='c' tag='SELECT' /&gt;" WaitForReady="COMPLETE" />
+            </ui:SelectItem.Target>
+          </ui:SelectItem>
+          <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click generate" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+            <ui:Click.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:Click.CursorPosition>
+            <ui:Click.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="c18e31ce33545a1bb5faaf21c621dd09" Selector="&lt;html title='Generate a Random Name - *' /&gt;&lt;webctrl id='genbtn' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE" />
+            </ui:Click.Target>
+          </ui:Click>
+          <ui:Comment sap2010:WorkflowViewState.IdRef="Comment_2" Text="----------------------- /settings  -----------------------&#xA;" />
+          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Full Name" sap2010:WorkflowViewState.IdRef="GetValue_1">
+            <ui:GetValue.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="31bf7efbfc6316469b0d84b1cc158178" Selector="&lt;html title='Generate a Random Name - Random, American, Australia - Fake Name*' /&gt;&lt;webctrl idx='1' tag='H3' /&gt;" TimeoutMS="[timeout]" WaitForReady="COMPLETE" />
+            </ui:GetValue.Target>
+            <ui:GetValue.Value>
+              <OutArgument x:TypeArguments="x:String">[gName]</OutArgument>
+            </ui:GetValue.Value>
+          </ui:GetValue>
+          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Addr" sap2010:WorkflowViewState.IdRef="GetValue_2">
+            <ui:GetValue.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="e2413d328ac77a165680cd8383b95c78" Selector="&lt;html title='Generate a Random Name - *' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='details' tag='DIV' /&gt;" TimeoutMS="[timeout]" WaitForReady="COMPLETE" />
+            </ui:GetValue.Target>
+            <ui:GetValue.Value>
+              <OutArgument x:TypeArguments="x:String">[gAddr]</OutArgument>
+            </ui:GetValue.Value>
+          </ui:GetValue>
+          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Email" sap2010:WorkflowViewState.IdRef="GetValue_3">
+            <ui:GetValue.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="9154b8960c7847e98a69bfe3a7a78c8a" Selector="&lt;html title='Generate a Random Name - *' /&gt;&lt;webctrl idx='8' tag='DD' /&gt;" TimeoutMS="[timeout]" WaitForReady="COMPLETE" />
+            </ui:GetValue.Target>
+            <ui:GetValue.Value>
+              <OutArgument x:TypeArguments="x:String">[gEmail]</OutArgument>
+            </ui:GetValue.Value>
+          </ui:GetValue>
+          <Sequence DisplayName="data cleanup &amp; log" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Default="[environment.NewLine]" Name="NL" />
+            </Sequence.Variables>
+            <Assign DisplayName="Cleanup" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[gAddr]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[gAddr.Replace(vbCrLf, " ")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="Cleanup" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[gEmail]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[gEmail.Replace(vbCrLf, " ")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="Remove crap" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[gEmail]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[gEmail.Replace("This is a real email address. Click here to activate it!", " ")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log message" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;New user generated: --------&quot;+gName +NL+gEmail +NL+ gAddr +NL]" />
+          </Sequence>
+        </Sequence>
+      </FlowStep>
+    </Flowchart.StartNode>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <sads:DebugSymbol.Symbol>d19DOlxVc2Vyc1xzb2xpZG94XERvY3VtZW50c1xVaVBhdGhcX1R1dG9yaWFsc1w1LjIgUHJvaiBPcmdhbmlzYXRpb25cNS4yIGludm9rZSAyXFBhcmVudFdGIDEueGFtbCU5A+YBDwIBAUEJ4QEUAgECQzlDPwIBA0ULchsCATNzC5oBGwIBMJsBC6kBFgIBLqoBC6oBjAECAS2rAQuyARkCASezAQu6ARkCASG7AQvCARkCARvDAQvgARYCAQRFtgFFwAECATRwngFwiAICATVzsAFzuwECATGYAZ4BmAGIAgIBMqcBngGnAfoBAgEvsAE3sAE+AgEorQGJAa0BhQICASytAZACrQGbAgIBKrgBN7gBPgIBIrUBiQG1AfcCAgEmtQGCA7UBjQMCASTAATfAAT8CARy9AYkBvQHeAQIBIL0B6QG9AfQBAgEexQE8xQFTAgEFxwENzgEWAgEXzwEN1gEWAgET1wEN3gEWAgEO3wEN3wHJAQIBBswBOMwBVAIBGskBOckBQAIBGNQBONQBVQIBFtEBOdEBQQIBFNwBONwBiQECARHZATnZAUECAQ/fAXrfAcYBAgEH</sads:DebugSymbol.Symbol>
+  </Flowchart>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="SelectItem_1" sap:VirtualizedContainerService.HintSize="336,134" />
+      <sap2010:ViewStateData Id="SelectItem_2" sap:VirtualizedContainerService.HintSize="336,134" />
+      <sap2010:ViewStateData Id="Click_3" sap:VirtualizedContainerService.HintSize="336,106" />
+      <sap2010:ViewStateData Id="Comment_2" sap:VirtualizedContainerService.HintSize="336,55" />
+      <sap2010:ViewStateData Id="GetValue_1" sap:VirtualizedContainerService.HintSize="336,106" />
+      <sap2010:ViewStateData Id="GetValue_2" sap:VirtualizedContainerService.HintSize="336,106" />
+      <sap2010:ViewStateData Id="GetValue_3" sap:VirtualizedContainerService.HintSize="336,106" />
+      <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="314,60" />
+      <sap2010:ViewStateData Id="Assign_2" sap:VirtualizedContainerService.HintSize="314,60" />
+      <sap2010:ViewStateData Id="Assign_3" sap:VirtualizedContainerService.HintSize="314,60" />
+      <sap2010:ViewStateData Id="LogMessage_1" sap:VirtualizedContainerService.HintSize="314,91" />
+      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="336,515">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Sequence_3" sap:VirtualizedContainerService.HintSize="200,51">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="FlowStep_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">200,144.5</av:Point>
+            <av:Size x:Key="ShapeSize">200,51</av:Size>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Flowchart_1" sap:VirtualizedContainerService.HintSize="614,636">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+            <av:Size x:Key="ShapeSize">60,75</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,144.5</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="ParentWF_1" sap:VirtualizedContainerService.HintSize="654,756" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>

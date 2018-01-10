@@ -1,0 +1,14 @@
+{
+  "name": "2.1 Intro",
+  "description": "Project",
+  "main": "D:\\UiPath\\Assignments\\Lesson 2 - Variables, Data Types & Control Flows - Workflows\\2.1 Intro\\Assign+Message.xaml",
+  "dependencies": {},
+  "excludedData": [
+    "Private:*",
+    "*password*"
+  ],
+  "toolVersion": "17.1.6522.14204",
+  "projectVersion": "1.0.6573.32956",
+  "packOptions": {},
+  "runtimeOptions": {}
+}

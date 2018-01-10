@@ -1,0 +1,12 @@
+{
+  "description": "Training samples",
+  "version": "2016.1.6137.29414",
+  "main": "Main.xaml",
+  "id": "Training",
+  "dependencies": {},
+  "configurationOptions": {},
+  "excludedData": [
+    "Private:*",
+    "*password*"
+  ]
+}

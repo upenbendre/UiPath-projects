@@ -1,0 +1,12 @@
+{
+  "description": "Simple Process Project",
+  "version": "1.0.0.0",
+  "main": "Main.xaml",
+  "id": "citrix1",
+  "dependencies": {},
+  "configurationOptions": {},
+  "excludedData": [
+    "Private:*",
+    "*password*"
+  ]
+}

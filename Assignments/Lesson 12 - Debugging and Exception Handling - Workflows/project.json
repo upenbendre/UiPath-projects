@@ -1,0 +1,12 @@
+{
+  "description": "Blank Project",
+  "version": "2016.1.5932.35641",
+  "main": "Main.xaml",
+  "id": "test1",
+  "dependencies": {},
+  "configurationOptions": {},
+  "excludedData": [
+    "Private:*",
+    "*password*"
+  ]
+}

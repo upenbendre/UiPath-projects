@@ -1,0 +1,25 @@
+{
+  "name": "UiPath_REFrameWork",
+  "description": "UiPath_REFrameWork Template",
+  "main": "Main.xaml",
+  "dependencies": {
+    "Microsoft.Activities.Extensions": "2.0.6.9",
+    "Twilio.Workflow.Activities": "1.0.0.0",
+    "UiPath.Cognitive.Activities": "1.0.6479.13212",
+    "UiPath.Core.Activities": "17.1.6522.14190",
+    "UiPath.Credentials.Activities": "1.1.6479.13204",
+    "UiPath.Database.Activities": "1.0.6479.13209",
+    "UiPath.Excel.Activities": "2.0.6526.16321",
+    "UiPath.Framework.Activities": "1.0.5905.30080",
+    "UiPath.FTP.Activities": "1.0.6479.13206",
+    "UiPath.Mail.Activities": "1.1.6562.21018"
+  },
+  "excludedData": [
+    "Private:*",
+    "*password*"
+  ],
+  "toolVersion": "17.1.6522.14204",
+  "projectVersion": "1.0.6575.9318",
+  "packOptions": {},
+  "runtimeOptions": {}
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Lesson 5 Practice 1 - Web Scraping - Answers",
+  "description": "Project",
+  "main": "D:\\UiPath\\Assignments\\Lesson 5 Practice 1 - Web Scraping - Answers\\Shopping for Laptops.xaml",
+  "dependencies": {},
+  "excludedData": [
+    "Private:*",
+    "*password*"
+  ],
+  "toolVersion": "17.1.6522.14204",
+  "projectVersion": "1.0.6583.41654",
+  "packOptions": {},
+  "runtimeOptions": {}
+}

@@ -1,0 +1,3 @@
+﻿Here is the introduction to the project
+Then the trigger is fired
+This is the most thrilling part..

@@ -1,0 +1,7 @@
+Good day,
+
+Unusual situation was encountered in report execution.
+Please check out the attached files for more details: {0}.
+
+Cheers,
+Robert Roboteanu
